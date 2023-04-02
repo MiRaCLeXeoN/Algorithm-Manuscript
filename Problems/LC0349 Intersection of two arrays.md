@@ -1,0 +1,60 @@
+# Leetcode 0349 Intersection of two arrays
+
+# Submissions
+
+## C++ V1
+
+```C++
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_set<int> result_set = unordered_set<int>();
+        unordered_set<int> num_set(nums1.begin(), nums1.end());
+        for (int num : nums2) {
+            if (num_set.find(num) != num_set.end()) { // if also exists in nums1
+                result_set.insert(num);
+            }
+        }
+        return vector<int>(result_set.begin(), result_set.end());
+    }
+};
+```
+
+Unordered_set is very useful when you need to find out whether a specific element exists or not. Such keywords, like partner, exist, find, check, etc, should trigger your switch of using hash methods.
+
+## C++ V2
+
+```C++
+```
+
+
+
+## Python V1
+
+```python
+```
+
+
+
+## Python V2
+
+```python
+
+```
+
+
+
+
+
+# Recommended links
+
+[Problem link](https://leetcode.com/problems/intersection-of-two-arrays/description/)
+
+[leetcode-master](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.md)
+
+
+
+# Tags
+
+- hash
+- unordered_set

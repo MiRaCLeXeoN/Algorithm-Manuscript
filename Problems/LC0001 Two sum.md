@@ -1,0 +1,66 @@
+# LC0001 Two sum
+
+# Submissions
+
+## C++ V1
+
+```C++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> map;
+        for (int i = 0; i < nums.size(); i++) {
+            auto partnerIdx = map.find(target - nums[i]);
+            if (partnerIdx != map.end()) {  // exists
+                return vector<int>({partnerIdx->second, i});
+                //return {partnerIdx->second, i};
+            }
+            // not found, insert current number and index into map
+            map.insert(pair<int, int>(nums[i], i));
+        }
+        return vector<int>({});
+        // return {}
+    }
+};
+```
+
+`set` data structure is not suitable to this situation, for the sake of its simple element form. We need to store the number itself and its index at the same time, a condition where `map` comes very handy.
+
+Remember that elements of a map are pairs, so you have to insert or reference in the way you do with a pair, like `partnerIdx->secon`. Furthermore, even though the function requires a vector of integers as return value, you can simply return an array in the form of `{a, b}`, which is automatically converted into a vector to be returned.
+
+## C++ V2
+
+```C++
+```
+
+
+
+## Python V1
+
+```python
+```
+
+
+
+## Python V2
+
+```python
+
+```
+
+
+
+
+
+# Recommended links
+
+[Problem link](https://leetcode.com/problems/two-sum/description/)
+
+[leetcode-master](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)
+
+
+
+# Tags
+
+- hash
+- unordered_map
