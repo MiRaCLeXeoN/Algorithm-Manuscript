@@ -1,0 +1,256 @@
+# LG5318 Documents search
+
+# Submissions
+
+## C++ V1
+
+```C++
+#include<iostream>
+#include<cstring>
+#include<vector>
+#include<queue>
+#include<stack>
+#include<algorithm>
+
+struct Edge {
+public:
+    int from = -1;
+    int to = -1;
+
+    Edge(int pfrom, int pto) {
+        from = pfrom;
+        to = pto;
+    }
+};
+
+struct Graph {
+public:
+    int nodesCount;
+    std::vector<struct Edge>* edges;
+    bool* visited;
+
+    Graph(int n) {
+        nodesCount = n;
+        this->edges = new std::vector<Edge>[n + 1];
+        this->visited = new bool[n + 1];
+    }
+    ~Graph() {
+        delete[] this->edges;
+        delete[] this->visited;
+    }
+    int reset();
+    void dfs1(int start);
+    void dfs2(int start);
+    // void bfs1(int start);
+    void bfs2(int start);
+};
+
+int Graph::reset() {
+    std::memset((void*)this->visited, 0, sizeof(bool) * (this->nodesCount + 1));
+    return 0;
+}
+
+// this implementation is totally wrong!!!
+// void Graph::bfs1(int start) {
+//     // [start] node is already visited
+//     std::queue<int> q;
+//     for (int i = 0; i < this->edges[start].size(); i++) {
+//         int to = this->edges[start][i].to;
+//         if (this->visited[to] == true) 
+//             continue;
+//         else {
+//             // visit
+//             this->visited[to] = true;
+//             std::cout << to << ' ';
+//             // push in queue
+//             q.push(to);
+//         }
+//     }
+//     // exit condition
+//     if (q.empty()) 
+//         return ;
+
+//     // recursive
+//     while (!q.empty())
+//     {
+//         auto next = q.front();
+//         q.pop();
+//         if (this->visited[next] == false) {
+//             bfs1(next);
+//         }
+//     }
+// }
+
+// non-recursive manner
+void Graph::bfs2(int start) {
+    reset();
+    std::queue<int> q;
+    // initialize
+    q.push(start);
+
+    while (!q.empty()) {
+        int next = q.front();
+        q.pop();
+        if (this->visited[next] == false) {
+            std::cout << next << ' ';
+            this->visited[next] = true;
+            for (int i = 0; i < this->edges[next].size(); i++) {
+                q.push(this->edges[next][i].to);
+            }
+        }
+    }
+}
+
+// recursive
+void Graph::dfs1(int start) {
+    std::stack<int> st;  // stack can be replaced by a vector
+    
+    // visit [start] node
+    this->visited[start] = true;
+    std::cout<< start << ' ';
+
+    // Because the nodes should be visted from low to high, we must traverse the vector in reverse order here
+    for (auto now = this->edges[start].rbegin(); now != this->edges[start].rend(); now++) {
+        // unvisited
+        if (this->visited[(*now).to] == false) {
+            st.push((*now).to);
+        }
+    }
+
+    // exit condition
+    if (st.empty()) {
+        return ;
+    }
+    
+    // recursive call
+    while (!st.empty()) {
+        auto next = st.top();
+        st.pop();
+        // since we may have circles in the graph, currently unvisited nodes are not guaranteed to reamin unvisited
+        // when iteration comes back from further depth. So you must check it
+        if (this->visited[next] == false) {
+            dfs1(next);
+        }
+    }
+}
+
+// non-recursive 
+void Graph::dfs2(int start) {
+    // reset
+    this->reset();
+
+    // push the start node, to create a uniform visiting order
+    std::stack<int> st;
+    st.push(start);
+
+    while (!st.empty()) {
+        auto next = st.top();
+        st.pop();
+        // -- every element in the stack are all unvisited, therefore there is no need to check it
+        // -- if (this->visited[next] == false)
+        // no!!!!!! Analysis above is incorrect in the background of this question
+        // since we may have circles in the graph, currently unvisited nodes are not guaranteed to reamin unvisited
+        // when iteration comes back from further depth. So you must check it
+
+        if (this->visited[next] == true) {
+            continue;
+        }
+
+        // visit
+        this->visited[next] = true;
+        std::cout << next << ' ';
+
+        // push more nodes
+        for (auto now = this->edges[next].rbegin(); now != this->edges[next].rend(); now++) {
+            if (this->visited[(*now).to] == false) {
+                st.push((*now).to);
+            }
+        }
+    }
+}
+
+int main() {
+    int n, m;
+    std::cin >> n >> m;
+
+    struct Graph graph{n};
+
+    // edges init
+    for (int i = 0; i < m; i++)
+    {
+        int from, to;
+        std::cin >> from >> to;
+        graph.edges[from].push_back({from ,to});
+    }
+
+    // sort
+    for (int i = 1; i < n + 1; i++) {
+        std::sort(graph.edges[i].begin(), graph.edges[i].end(), [](Edge e1, Edge e2){return e1.to < e2.to;});
+    }
+    
+    // // dfs1
+    // graph.reset();
+    // graph.dfs1(1);
+    // std::cout << std::endl;
+
+    // dfs2
+    graph.dfs2(1);
+    std::cout << std::endl;
+
+    // bfs2
+    graph.bfs2(1);
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+
+- `sort` edges in order
+- bfs is unnecessary to be recuresive. The non-recursive method is straightforward and easy to implement.
+- how to store the map is critical.
+- define all variables as member variables and functions as method can make the code more integrated
+- When writing recursive functions, check these factors:
+  - exit condition: where to examine the exit condition
+  - operations in each layer: you should make this clear, to avoid forgetting any important operation assuming that it was performed by the previous layer
+  - call next function recursively
+
+
+
+## C++ V2
+
+```C++
+```
+
+
+
+## Python V1
+
+```python
+```
+
+
+
+## Python V2
+
+```python
+
+```
+
+
+
+
+
+# Recommended links
+
+[Problem link]()
+
+Recommended problem solution provider:
+
+
+
+# Tags
+
+- version=0.1
+- difficulty=easy
+- keyword=
+- 

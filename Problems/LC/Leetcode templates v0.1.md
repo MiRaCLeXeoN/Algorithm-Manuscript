@@ -43,5 +43,7 @@
 
 # Tags
 
-- array
-- binary search
+- version=0.1
+- difficulty=easy
+- keyword=
+- 
