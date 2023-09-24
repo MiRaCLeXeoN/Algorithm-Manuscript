@@ -252,5 +252,6 @@ Recommended problem solution provider:
 
 - version=0.1
 - difficulty=easy
-- keyword=
+- keyword=dfs
+- keyword=bfs
 - 
