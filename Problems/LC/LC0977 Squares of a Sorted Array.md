@@ -1,0 +1,118 @@
+# Leetcode 0977 Sqaures of a Sorted Array
+
+# Submissions
+
+## C++ V1
+
+```C++
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<cmath>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        for (auto i = nums.begin(); i != nums.end(); i++) {
+            *i = pow(*i, 2);
+        }
+        sort(nums.begin(), nums.end());
+
+        return nums;
+    }
+};
+
+void readin(vector<int>& nums){
+    int a = 0;
+    while (!cin.eof()) {
+        cin >> a;
+        nums.push_back(a);
+    }
+
+    for (auto num : nums) {
+        cout << num << " ";
+    } 
+}
+
+int main(){
+    vector<int> nums = {};
+    readin(nums);
+    Solution s;
+    s.sortedSquares(nums);
+
+    cout << endl;
+    for (auto num : nums) {
+        cout << num << " ";
+    }
+
+    return 0;
+}
+```
+
+The simplest version. Remember that `sort` is in-place transformation.
+
+
+## C++ V2
+
+```C++
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        vector<int> result(nums.size());
+        int head = 0, tail = nums.size() - 1;
+        int head_num, tail_num;
+        for (int i = result.size() - 1; i >= 0; i--) {
+            head_num = nums[head] * nums[head];
+            tail_num = nums[tail] * nums[tail];
+            if (head_num > tail_num) {
+                result[i] = head_num;
+                head++;
+            }
+            else {
+                result[i] = tail_num;
+                tail--;
+            }
+        }
+        return result;
+    }
+};
+```
+
+Since the array is non-decreasingly ordered, we can infer that the biggest number we haven't process yet must lie at the either end of the array. Double pointers would help to solve this problem.
+
+Double pointer essentially is a method to iterate, but you are concurrently searching through two paths. If there are 3 or even more possible paths, certainly that you may develop a program using "triple pointers". That is the eesence and the fundamental mechanism of "double pointers".
+
+
+
+## Python V1
+
+```python
+```
+
+
+
+## Python V2
+
+```python
+
+```
+
+
+
+
+
+# Recommended links
+
+[Problem link](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+
+[leetcode-master](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.md)
+
+
+
+# Tags
+
+- version=0.1
+- difficulty=easy
+- keyword=two pointers
+- keyword=array
