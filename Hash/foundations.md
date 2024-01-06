@@ -12,6 +12,10 @@
 
 # Problem list
 
+[LC0242 Valid Anagram](../Problems/LC/LC0242.md)
+
+[LC1002 Find Common Characters](../Problems/LC/LC1002.md)
+
 [LC0349 Intersection of two arrays](../Problems/LC/LC0349.md)
 
 [LC0001 Two sum](../Problems/LC/LC0001.md)
