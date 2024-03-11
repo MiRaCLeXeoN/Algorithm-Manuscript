@@ -25,3 +25,17 @@
 [LC0117 Populating Next Right Pointers in Each Node II](../Problems/LC/LC0117.md)
 
 [LC0104 Maximum Depth of Binary Tree](../Problems/LC/LC0104.md)
+
+# Traversal
+
+[LC0226 Invert Binary Tree](../Problems/LC/LC0226.md)
+
+[LC0589 N-ary Tree Preorder Traversal](../Problems/LC/LC0589.md)
+
+[LC0590 N-ary Tree Postorder Traversal](../Problems/LC/LC0590.md)
+
+# Morris Traversal
+
+Morris traversal has time complexity $O(n)$ (But nodes may be visited more than once), and space complexity $O(1)$.
+
+If uses the leaf nodes' children pointer.
