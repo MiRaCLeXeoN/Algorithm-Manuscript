@@ -14,7 +14,7 @@ Let's assume that the length of the "tail" is $a$, and the circumference of the 
 | ----      | ---- | ---- | ----- |
 | a | 2a | a | slow enters the circle |
 | a + b - a%b | 2a + 2b - 2(a%b) | a + b - a%b | slow meets fast |
-| 2a + b - a%b | 2a + b - a%b | 3a + 2b - 2(a%b) | slow meets fast at the entrance of the circle |
+| 2a + b - a%b | 3a + 2b - 2(a%b) | 2a + b - a%b | slow enters the circle and meets fast at the entrance of the circle |
 
 At time step `2a + b - a%b`, the difference in travel length of fast and slow is `a + b - a%b`, which must be a multiple of $b$. Therefore, they must meet at the entrance of the circle.
 

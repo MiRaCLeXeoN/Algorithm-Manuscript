@@ -1,3 +1,5 @@
+Traversal result cannot reflect the original tree structure. Two different trees may derive the same traversal result. We can conclude that any traversal-based solution cannot be used for determining tree structure!
+
 # Depth first traversal
 
 [LC0144 Binary Tree Preorder Traversal](../Problems/LC/LC0144.md)
@@ -33,6 +35,9 @@
 [LC0589 N-ary Tree Preorder Traversal](../Problems/LC/LC0589.md)
 
 [LC0590 N-ary Tree Postorder Traversal](../Problems/LC/LC0590.md)
+
+[LC0101 Symmetric Tree](../Problems/LC/LC0101.md)
+
 
 # Morris Traversal
 

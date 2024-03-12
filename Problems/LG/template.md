@@ -1,4 +1,4 @@
-# Leetcode xxxx Problem name
+# Luogu xxxx Problem name
 
 # Submissions
 
@@ -32,14 +32,11 @@
 
 
 
-
-
 # Recommended links
 
 [Problem link]()
 
 Recommended problem solution provider:
-
 
 
 # Tags
