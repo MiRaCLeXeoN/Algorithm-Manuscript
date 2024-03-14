@@ -39,7 +39,9 @@
 
 # Tags
 
-- version=0.1
+- version=0.2
 - difficulty=easy
+- status=unfinished
+- review_time=0
 - keyword=
 - 
