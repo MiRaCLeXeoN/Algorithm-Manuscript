@@ -34,6 +34,8 @@ If you use recursion, the stack-based nature will help you to store such informa
 
 [LC0113 Path Sum II](../Problems/LC/LC0113.md)
 
+[LC0236 Lowest Common Ancestor of a Binary Tree](../Problems/LC/LC0236.md)
+
 ## Recursive solution
 
 4 steps to build a recursive solution:

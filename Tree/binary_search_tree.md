@@ -9,3 +9,9 @@ The inorder traversal result of a binary search tree must be a ordered array.
 [LC0530 Minimum Absolute Difference in BST](../Problems/LC/LC0530.md)
 
 [LC0501 Find Mode in Binary Search Tree](../Problems/LC/LC0501.md)
+
+[LC0235 Lowest Common Ancestor of a Binary Search Tree](../Problems/LC/LC0235.md)
+
+[LC0701 Insert into a Binary Search Tree](../Problems/LC/LC0701.md)
+
+[LC0450 Delete Node in a BST](../Problems/LC/LC0450.md)
