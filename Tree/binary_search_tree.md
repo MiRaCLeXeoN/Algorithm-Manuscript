@@ -15,3 +15,7 @@ The inorder traversal result of a binary search tree must be a ordered array.
 [LC0701 Insert into a Binary Search Tree](../Problems/LC/LC0701.md)
 
 [LC0450 Delete Node in a BST](../Problems/LC/LC0450.md)
+
+[LC0669 Trim a Binary Search Tree](../Problems/LC/LC0669.md)
+
+[LC0538 Convert BST to Greater Tree](../Problems/LC/LC0548.md)
