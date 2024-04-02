@@ -15,3 +15,9 @@
 [LC0078 Subsets](../Problems/LC/LC0078.md)
 
 [LC0090 Subsets II](../Problems/LC/LC0090.md)
+
+[LC0491 Non-Decreasing Subsequences](../Problems/LC/LC0491.md)
+
+[LC0046 Permutations](../Problems/LC/LC0046.md)
+
+[LC0047 Permutaions II](../Problems/LC/LC0047.md)
