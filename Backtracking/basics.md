@@ -25,3 +25,5 @@
 [LC0332 Reconstruct Itinerary](../Problems/LC/LC0332.md)
 
 [LC0051 N-Queens](../Problems/LC/LC0051.md)
+
+[LC0037 Sudoku Solver](../Problems/LC/LC0037.md)
