@@ -7,3 +7,5 @@
 [LC0122 Best Time to Buy and Sell Stock II](../Problems/LC/LC0122.md)
 
 [LC0055 Jump Game](../Problems/LC/LC0055.md)
+
+[LC0045 Jump Game II](../Problems/LC/LC0045.md)
