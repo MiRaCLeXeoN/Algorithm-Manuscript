@@ -9,3 +9,11 @@
 [LC0055 Jump Game](../Problems/LC/LC0055.md)
 
 [LC0045 Jump Game II](../Problems/LC/LC0045.md)
+
+[LC1005 Maximize Sum of Array After K Negations](../Problems/LC/LC1005.md)
+
+[LC0134 Gas Station](../Problems/LC/LC0134.md)
+
+[LC0135 Candy](../Problems/LC/LC0135.md)
+
+[LC0860 Lemonade Change](../Problems/LC/LC0860.md)
