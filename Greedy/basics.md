@@ -1,3 +1,5 @@
+This is where greedy strategy particularly sucks, usually we cannot derive a rigorous mathematical proof to support our implementation. We have to simulate and try.
+
 [LC0455 Assign Cookies](../Problems/LC/LC0455.md)
 
 [LC0376 Wiggle Subsequence](../Problems/LC/LC0376.md)
@@ -17,3 +19,7 @@
 [LC0135 Candy](../Problems/LC/LC0135.md)
 
 [LC0860 Lemonade Change](../Problems/LC/LC0860.md)
+
+[LC0452 Minimum Number of Arrows to Burst Balloons](../Problems/LC/LC0452.md)
+
+[LC0435 Non-overlapping Intervals](../Problems/LC/LC0435.md)
