@@ -23,3 +23,9 @@ This is where greedy strategy particularly sucks, usually we cannot derive a rig
 [LC0452 Minimum Number of Arrows to Burst Balloons](../Problems/LC/LC0452.md)
 
 [LC0435 Non-overlapping Intervals](../Problems/LC/LC0435.md)
+
+[LC0763 Partition Labels](../Problems/LC/LC0763.md)
+
+[LC0056 Merge Intervals](../Problems/LC/LC0056.md)
+
+[LC0435 Non-overlapping Intervals](../Problems/LC/LC0435.md)
