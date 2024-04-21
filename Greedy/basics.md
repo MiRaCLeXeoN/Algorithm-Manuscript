@@ -29,3 +29,7 @@ This is where greedy strategy particularly sucks, usually we cannot derive a rig
 [LC0056 Merge Intervals](../Problems/LC/LC0056.md)
 
 [LC0435 Non-overlapping Intervals](../Problems/LC/LC0435.md)
+
+[LC0738 Monotone Increasing Digits](../Problems/LC/LC0738.md)
+
+[LC0968 Binary Tree Cameras](../Problems/LC/LC0968.md)
