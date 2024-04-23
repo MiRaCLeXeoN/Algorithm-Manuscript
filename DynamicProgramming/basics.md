@@ -16,3 +16,10 @@
 [LC0746 Min Cost Climbing Stairs](../Problems/LC/LC0746.md)
 
 [LC0062 Unique Paths](../Problems/LC/LC0062.md)
+
+[LC0063 Unique Paths II](../Problems/LC/LC0063.md)
+
+[LC0343 Integer Break](../Problems/LC/LC0343.md)
+
+[LC0062 Unique Paths](../Problems/LC/LC0062.md)
+[LC0062 Unique Paths](../Problems/LC/LC0062.md)
