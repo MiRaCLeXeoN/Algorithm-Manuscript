@@ -27,3 +27,21 @@ However, in the context of unbounded knapsack problem, we deliberately iterate f
 [KM0052 Research Materials](../Problems/KM/KM0052.md)
 
 [LC0518 Coin Change II](../Problems/LC/LC0518.md)
+
+[LC0070 Climbing Stairs](../Problems/LC/LC0070.md)
+
+[LC0322 Coin Changes](../Problems/LC/LC0322.md)
+
+## Finding permutations:
+
+If you want to find permutations and list all of it, there is no other choice but to resort to brute-force.
+
+If you want to find number of possible permutations, you have to iterate through knapsack capacity in the outer loop and numbers in the inner loop.
+
+[LC0377 Combination Sum IV](../Problems/LC/LC0377.md)
+
+## Finding combinations:
+
+To find number of possible combinations, you need to iterate numbers in the outer loop and knapsack capacity in the inner loop.
+
+[LC0518 Coin Change II](../Problems/LC/LC0518.md)
