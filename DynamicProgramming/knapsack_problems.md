@@ -32,6 +32,8 @@ However, in the context of unbounded knapsack problem, we deliberately iterate f
 
 [LC0322 Coin Changes](../Problems/LC/LC0322.md)
 
+[LC0279 Perfect Sqaures](../Problems/LC/LC0279.md)
+
 ## Finding permutations:
 
 If you want to find permutations and list all of it, there is no other choice but to resort to brute-force.
