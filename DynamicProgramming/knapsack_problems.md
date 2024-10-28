@@ -42,6 +42,9 @@ If you want to find number of possible permutations, you have to iterate through
 
 [LC0377 Combination Sum IV](../Problems/LC/LC0377.md)
 
+[LC0139 Word Break](../Problems/LC/LC0139.md)
+
+
 ## Finding combinations:
 
 To find number of possible combinations, you need to iterate numbers in the outer loop and knapsack capacity in the inner loop.
